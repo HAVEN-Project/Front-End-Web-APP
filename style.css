@@ -11,25 +11,23 @@ body {
     color: #333;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;  /* full viewport height */
+    min-height: 100vh; /* full viewport height */
 }
 
 header {
     background-color: #4a90e2;
     color: white;
     padding: 20px;
-    width: 100%;
     text-align: center;
 }
 
 main {
-    flex: 1;                     /* take all remaining vertical space */
+    flex-grow: 1;                  /* fills the space between header & footer */
     display: flex;
     flex-direction: column;
-    justify-content: center;      /* vertical centering inside main */
-    align-items: center;          /* horizontal centering */
+    justify-content: center;        /* vertical centering */
+    align-items: center;            /* horizontal centering */
     text-align: center;
-    padding: 20px;
 }
 
 button {
@@ -51,6 +49,5 @@ footer {
     background-color: #222;
     color: white;
     padding: 10px;
-    width: 100%;
     text-align: center;
 }
