@@ -5,18 +5,13 @@
     box-sizing: border-box;
 }
 
-/* Make body take full viewport height and center content */
 body {
     font-family: Arial, sans-serif;
     background-color: #ffffff;
     color: #333;
-
     display: flex;
     flex-direction: column;
-    justify-content: center;   /* vertical centering */
-    align-items: center;       /* horizontal centering */
-    min-height: 100vh;         /* fill full viewport height */
-    text-align: center;        /* center text inside elements */
+    min-height: 100vh;  /* full viewport height */
 }
 
 header {
@@ -28,10 +23,12 @@ header {
 }
 
 main {
+    flex: 1;                     /* take all remaining vertical space */
     display: flex;
     flex-direction: column;
-    justify-content: center;  /* vertical centering inside main */
-    align-items: center;      /* horizontal centering inside main */
+    justify-content: center;      /* vertical centering inside main */
+    align-items: center;          /* horizontal centering */
+    text-align: center;
     padding: 20px;
 }
 
