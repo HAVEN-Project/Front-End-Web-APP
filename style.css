@@ -1,33 +1,29 @@
-/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Full viewport height */
 html, body {
     height: 100%;
     font-family: Arial, sans-serif;
 }
 
-/* Body as column flex container */
-body {
+.container {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-/* Header & Footer */
 header, footer {
     width: 100%;
     text-align: center;
+    padding: 20px;
 }
 
 header {
     background-color: #4a90e2;
     color: white;
-    padding: 20px;
 }
 
 footer {
@@ -36,17 +32,16 @@ footer {
     padding: 10px;
 }
 
-/* Main fills remaining space & centers content */
-main {
-    flex: 1;                       /* take up all space between header & footer */
+/* This is the key: center content */
+.center-content {
+    flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;       /* vertical centering */
-    align-items: center;           /* horizontal centering */
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
-/* Button styling */
 button {
     padding: 10px 20px;
     background-color: #4a90e2;
