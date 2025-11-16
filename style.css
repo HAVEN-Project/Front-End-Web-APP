@@ -1,4 +1,4 @@
-/* Reset some default styles */
+/* Reset default styles */
 * {
     margin: 0;
     padding: 0;
@@ -9,50 +9,24 @@ body {
     font-family: Arial, sans-serif;
     background-color: #ffffff;
     color: #333;
-    display: flex;
-    flex-direction: column;
-    align-items: center;       /* centers content horizontally */
-    justify-content: center;   /* centers content vertically */
-    min-height: 100vh;
-    text-align: center;        /* ensures text inside elements is centered */
+
+    display: flex;             /* make body a flex container */
+    flex-direction: column;    /* stack header, main, footer */
+    align-items: center;       /* horizontal centering */
+    justify-content: center;   /* vertical centering */
+    min-height: 100vh;         /* fill viewport */
+    text-align: center;        /* center text inside elements */
 }
 
-header {
-    background-color: #4a90e2;
-    color: white;
-    padding: 20px;
-    width: 100%;
+header, footer {
+    width: 100%;               /* make them span full width */
+    text-align: center;
 }
 
 main {
-    flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: center;      /* centers child elements horizontally */
-    justify-content: center;  /* centers child elements vertically */
+    align-items: center;       /* horizontal centering */
+    justify-content: center;   /* vertical centering inside main */
     padding: 20px;
-    width: 100%;
-}
-
-button {
-    padding: 10px 20px;
-    background-color: #4a90e2;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 20px;
-    font-size: 16px;
-}
-
-button:hover {
-    background-color: #357ab8;
-}
-
-footer {
-    background-color: #222;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    width: 100%;
 }
