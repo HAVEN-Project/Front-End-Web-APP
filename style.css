@@ -1,63 +1,63 @@
 /* Reset */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* Full viewport height */
 html, body {
-  height: 100%;
-  font-family: Arial, sans-serif;
+    height: 100%;
+    font-family: Arial, sans-serif;
 }
 
-/* Body uses column layout */
+/* Body as column flex container */
 body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-/* Header and footer normal width */
+/* Header & Footer */
 header, footer {
-  width: 100%;
-  text-align: center;
+    width: 100%;
+    text-align: center;
 }
 
 header {
-  background-color: #4a90e2;
-  color: white;
-  padding: 20px;
+    background-color: #4a90e2;
+    color: white;
+    padding: 20px;
 }
 
 footer {
-  background-color: #222;
-  color: white;
-  padding: 10px;
+    background-color: #222;
+    color: white;
+    padding: 10px;
 }
 
-/* MAIN fills remaining space and centers content */
+/* Main fills remaining space & centers content */
 main {
-  flex: 1;                       /* takes all remaining vertical space */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;       /* vertical center */
-  align-items: center;           /* horizontal center */
-  text-align: center;
+    flex: 1;                       /* take up all space between header & footer */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;       /* vertical centering */
+    align-items: center;           /* horizontal centering */
+    text-align: center;
 }
 
 /* Button styling */
 button {
-  padding: 10px 20px;
-  background-color: #4a90e2;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 20px;
-  font-size: 16px;
+    padding: 10px 20px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 16px;
 }
 
 button:hover {
-  background-color: #357ab8;
+    background-color: #357ab8;
 }
