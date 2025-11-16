@@ -11,7 +11,10 @@ body {
     color: #333;
     display: flex;
     flex-direction: column;
+    align-items: center;       /* centers content horizontally */
+    justify-content: center;   /* centers content vertically */
     min-height: 100vh;
+    text-align: center;        /* ensures text inside elements is centered */
 }
 
 header {
@@ -19,16 +22,16 @@ header {
     color: white;
     padding: 20px;
     width: 100%;
-    text-align: center;
 }
 
 main {
     flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: center;      /* centers child elements horizontally */
+    justify-content: center;  /* centers child elements vertically */
     padding: 20px;
+    width: 100%;
 }
 
 button {
@@ -51,4 +54,5 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
+    width: 100%;
 }
