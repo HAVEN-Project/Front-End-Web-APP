@@ -5,28 +5,55 @@
     box-sizing: border-box;
 }
 
+/* Make body take full viewport height and center content */
 body {
     font-family: Arial, sans-serif;
     background-color: #ffffff;
     color: #333;
 
-    display: flex;             /* make body a flex container */
-    flex-direction: column;    /* stack header, main, footer */
-    align-items: center;       /* horizontal centering */
+    display: flex;
+    flex-direction: column;
     justify-content: center;   /* vertical centering */
-    min-height: 100vh;         /* fill viewport */
+    align-items: center;       /* horizontal centering */
+    min-height: 100vh;         /* fill full viewport height */
     text-align: center;        /* center text inside elements */
 }
 
-header, footer {
-    width: 100%;               /* make them span full width */
+header {
+    background-color: #4a90e2;
+    color: white;
+    padding: 20px;
+    width: 100%;
     text-align: center;
 }
 
 main {
     display: flex;
     flex-direction: column;
-    align-items: center;       /* horizontal centering */
-    justify-content: center;   /* vertical centering inside main */
+    justify-content: center;  /* vertical centering inside main */
+    align-items: center;      /* horizontal centering inside main */
     padding: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #357ab8;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
 }
